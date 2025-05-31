@@ -22,11 +22,6 @@ pipeline {
         }
 
         stage('test'){
-            agent{
-                docker{
-
-                }
-            }
             steps{
                 sh 'echo "test stage"'
             }
