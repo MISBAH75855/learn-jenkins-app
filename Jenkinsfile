@@ -35,7 +35,7 @@ pipeline {
             }
             post {
                 always {
-                    junit 'jest-results/juint.xml'
+                    junit 'test-results/juint.xml'
                 }
             }
         }
@@ -75,11 +75,6 @@ pipeline {
                     node_modules/.bin/netliy --version
                 '''
             }
-        }
-    }
-    post{
-        always {
-            junit 'test-results/junit.xml'
         }
     }
 }
